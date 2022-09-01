@@ -21,6 +21,21 @@
 
   <meta name="theme-color" content="#fafafa">
 </head>
+<body>
+
+  <!-- Add your site or application content here -->
+  <p>This is a simple CSS Clock animation</p>
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'Shrubio.github.io', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
 <div>
   <ul class="hourTens"><li>0</li><li>1</li><li>2</li></ul>
   <ul class="hourOnes"><li>0</li><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li></ul>
@@ -31,23 +46,7 @@
   <ul class="secondTens"><li>0</li><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li></ul>
   <ul class="secondOnes"><li>0</li><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li></ul>
 </div>
-<body>
-
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
-
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
-</body>
-
-<style></style>
+<style>
 $hour: 12;
 $minute: 14;
 $second: 27;
@@ -167,3 +166,4 @@ ul{ position: relative; list-style-type: none; width: 30px; height: $font-size; 
 	&:last-of-type:after{ display: none; }
 	li{ backface-visibility: hidden; position: absolute; font-size: $font-size; line-height: 1; color: $color--inactive; }
 }
+</style>
